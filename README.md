@@ -16,6 +16,21 @@
 
 ![](.github/altgr-shift.png?raw=true)
 
+## Установка
+
+### Windows
+
+- Клонировать репозиторий
+- Выполнить установку через файлы `setup.exe` в [QWERTY](./layouts/windows/qwerty/installer/) И [ЙЦУКЕН](./layouts/windows/jcuken/installer/)
+- Выбери новые раскладки - `Русская/США - расширенная`
+
+### Linux
+
+- Перенести файлы из [symbols](./layouts/linux/xkb/symbols/) в папку `/usr/share/X11/xkb/symbols/`
+- Перенести layouts из файла [evdev.xml](./layouts/linux/xkb/rules/evdev.xml) в конец тега `layoutList` файла `/usr/share/X11/xkb/rules/evdev.xml`
+- Перезапусти ПК
+- Выбери новые раскладки в настройках клавиатуры - `English/Russian (custom AltGr)`
+
 ## Клавиши
 
 | Спецсимвол         | Комбинация                  |
