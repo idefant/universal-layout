@@ -18,18 +18,28 @@
 
 ## Установка
 
+Обе раскладки используют единые имена: `universal-us` и `universal-ru`.
+В MSKLC 1.4 внутреннее имя раскладки ограничено 8 символами, поэтому
+в Windows используются внутренние имена `univ-us` / `univ-ru` и DLL
+`univ-us.dll` / `univ-ru.dll`. Имена исходников и установочных пакетов — полные.
+
 ### Windows
 
 - Клонировать репозиторий
-- Выполнить установку через файлы `setup.exe` в [QWERTY](./layouts/windows/qwerty/installer/) И [ЙЦУКЕН](./layouts/windows/jcuken/installer/)
-- Выбери новые раскладки - `Русская/США - расширенная`
+- Выполнить установку через файлы `setup.exe` в [universal-us](./layouts/windows/universal-us/installer/) И [universal-ru](./layouts/windows/universal-ru/installer/)
+- Выбери новые раскладки - `США - Universal Layout` и `Русский - Universal Layout`
+
+Для пересборки DLL и обновления MSI установи Microsoft Keyboard Layout Creator 1.4
+и выполни `powershell -ExecutionPolicy Bypass -File scripts/build-windows.ps1`.
+Скрипт использует MSI из репозитория как шаблоны и обновляет внешние DLL для всех
+четырёх архитектур. Проверка сборки не устанавливает раскладки в систему.
 
 ### Linux
 
 - Перенести файлы из [symbols](./layouts/linux/xkb/symbols/) в папку `/usr/share/X11/xkb/symbols/`
 - Перенести layouts из файла [evdev.xml](./layouts/linux/xkb/rules/evdev.xml) в конец тега `layoutList` файла `/usr/share/X11/xkb/rules/evdev.xml`
 - Перезапусти ПК
-- Выбери новые раскладки в настройках клавиатуры - `English/Russian (custom AltGr)`
+- Выбери новые раскладки в настройках клавиатуры - `English (Universal Layout)` и `Russian (Universal Layout)`
 
 ## Точка и запятая на нумпаде
 

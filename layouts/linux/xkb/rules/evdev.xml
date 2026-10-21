@@ -5,13 +5,13 @@
     <!-- Другие твои раскладки (удалять не нужно) -->
     <!-- ..................... -->
 
-    <!-- В самом конце списка layoutList добавь кастомные раскладки - myus, myru -->
+    <!-- В самом конце списка layoutList добавь кастомные раскладки - universal-us, universal-ru -->
 
     <layout>
       <configItem>
-        <name>myus</name>
+        <name>universal-us</name>
         <shortDescription>EN</shortDescription>
-        <description>English (custom AltGr)</description>
+        <description>English (Universal Layout)</description>
         <languageList>
           <iso639Id>eng</iso639Id>
         </languageList>
@@ -20,9 +20,9 @@
 
     <layout>
       <configItem>
-        <name>myru</name>
+        <name>universal-ru</name>
         <shortDescription>RU</shortDescription>
-        <description>Russian (custom AltGr)</description>
+        <description>Russian (Universal Layout)</description>
         <languageList>
           <iso639Id>rus</iso639Id>
         </languageList>
